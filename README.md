@@ -1,5 +1,9 @@
 # Damien Ligier, PhD
 
+
+<img src="picture.png" alt="isolated" width="200" style="float: left; margin-right: 10px; margin-bottom: 10px; border: solid black;">
+
+
 My research focuses on **Fully Homomorphic Encryption (FHE)** and other **Privicy-Enhencing Technologies (PET)**.
 I hold a PhD in Computer Science from CEA & IMT Atlantique where I specialized in practical applications of Functional Encryption (FE). I also earned a Master's degree in Mathematics and Computer Science applied to Cryptology from Université Paris Diderot-Paris 7.
 
