@@ -59,3 +59,6 @@ December 2021 at Asiacrypt 2021 with I. Chillotti, J.-B. Orfila and S. Tap.
   - C++
   - UML
   - Supervision of student projects
+
+
+ 🙂
