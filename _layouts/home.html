@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Damien Ligier, PhD</title>
+  <meta name="description" content="Damien Ligier's personal webpage">
+  <meta name="author" content="Damien Ligier">
+  <meta name="keywords" content="Damien, Ligier, FHE, Crypto, Cryptology">
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg:      #f6efe4;
+      --paper:   #fbf6ec;
+      --ink:     #3b332b;
+      --muted:   #877868;
+      --accent:  #b26a43;
+      --accent-deep: #8f5130;
+      --line:    #e6dac6;
+      --shadow:  rgba(86, 62, 38, 0.13);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background-color: var(--bg);
+      background-image:
+        radial-gradient(1200px 600px at 50% -200px, #fbf5ea 0%, rgba(251,245,234,0) 70%);
+      color: var(--ink);
+      font-family: "Inter", -apple-system, "Segoe UI", sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    .wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 4.5rem 1.6rem 5rem;
+    }
+
+    /* ---------- header (fixed, lives in the layout) ---------- */
+    header {
+      display: flex;
+      gap: 1.8rem;
+      align-items: center;
+      margin-bottom: 1.4rem;
+    }
+
+    .portrait {
+      flex: 0 0 auto;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 18px;
+      filter: sepia(14%) contrast(1.02);
+      border: 1px solid var(--line);
+      box-shadow: 0 14px 30px -12px var(--shadow);
+      transform: rotate(-1.5deg);
+      transition: transform .4s ease;
+    }
+    header:hover .portrait { transform: rotate(0deg) scale(1.015); }
+
+    .name {
+      font-family: "Space Mono", ui-monospace, monospace;
+      font-weight: 700;
+      font-size: clamp(1.9rem, 5.5vw, 2.6rem);
+      line-height: 1.08;
+      margin: 0 0 .45rem;
+      letter-spacing: -0.03em;
+    }
+    .tagline {
+      margin: 0;
+      color: var(--muted);
+      font-style: italic;
+      font-size: 1.02rem;
+    }
+
+    /* ---------- content (rendered from the Markdown file) ---------- */
+    .content > p:first-child { margin-top: 0; }
+
+    .content p {
+      margin: 0 0 1.05rem;
+      text-align: justify;
+      hyphens: auto;
+    }
+
+    /* section headings: Markdown "## ..."  */
+    h2 {
+      font-family: "Space Mono", ui-monospace, monospace;
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: var(--ink);
+      margin: 2.8rem 0 1.1rem;
+      padding-bottom: .45rem;
+      border-bottom: 1px solid var(--line);
+      letter-spacing: -0.02em;
+    }
+
+    /* section emoji reacts when the mouse is anywhere in its section */
+    .sec-emoji {
+      display: inline-block;
+      transform-origin: center;
+      transition: transform .45s cubic-bezier(.34, 1.56, .64, 1);
+    }
+    .sec:hover .sec-emoji {
+      transform: rotate(-9deg) scale(1.28);
+    }
+
+    /* ---------- touch devices: drive the animations by tap ----------
+       Devices without a hover-capable pointer (phones, tablets) never fire the
+       :hover rules above, so tapping anywhere inside a section replays the same
+       transform via a .tapped class (toggled in JS). */
+    @media (hover: none) {
+      .sec.tapped .sec-emoji { transform: rotate(-9deg) scale(1.28); }
+      /* On phones the portrait rests at rotate(0deg), so a plain scale(1.015)
+         is invisible — give the tap a clearly noticeable tilt + grow pop. */
+      .portrait.tapped { transform: rotate(-3deg) scale(1.06); }
+    }
+
+    /* publication year labels: Markdown "#### 2025" */
+    h4 {
+      font-family: "Space Mono", ui-monospace, monospace;
+      font-weight: 700;
+      font-size: .8rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 1.6rem 0 .55rem;
+    }
+    h4:first-of-type { margin-top: .4rem; }
+
+    /* ---------- lists ---------- */
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      position: relative;
+      padding-left: 1.35rem;
+      margin: 0 0 .42rem;
+      text-align: justify;
+      hyphens: auto;
+    }
+    li::before {
+      content: "";
+      position: absolute;
+      left: 2px;
+      top: 0.64em;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      opacity: .7;
+    }
+    li ul { margin-top: .35rem; }
+    li ul li { margin-bottom: .22rem; }
+    li ul li::before {
+      background: none;
+      border: 1.5px solid var(--accent);
+      opacity: .55;
+    }
+
+    strong { font-weight: 600; color: var(--ink); }
+    em { color: var(--muted); }
+
+    /* ---------- links ---------- */
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(178, 106, 67, 0.32);
+      transition: color .2s ease, border-color .2s ease, background-color .2s ease;
+    }
+    a:hover {
+      color: var(--accent-deep);
+      border-bottom-color: var(--accent-deep);
+      background-color: rgba(178, 106, 67, 0.08);
+    }
+
+    /* ---------- footer ---------- */
+    footer {
+      margin-top: 4rem;
+      padding-top: 1.4rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .9rem;
+      font-style: italic;
+      text-align: center;
+    }
+    footer a { border-bottom: none; }
+
+    /* ---------- responsive ---------- */
+    @media (max-width: 560px) {
+      .wrap { padding: 3rem 1.3rem 3.5rem; }
+      header { flex-direction: column; text-align: center; gap: 1.2rem; }
+      .portrait { transform: rotate(0deg); }
+      .tagline { font-size: 1rem; }
+      body { font-size: 17px; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+
+    <header>
+      <img class="portrait" src="picture.png" alt="Damien Ligier">
+      <div>
+        <h1 class="name">Damien Ligier</h1>
+        <p class="tagline">FHE &amp; PET Researcher</p>
+      </div>
+    </header>
+
+    <div class="content">
+      {{ content }}
+    </div>
+
+    <!-- <footer>
+      Damien Ligier, PhD
+    </footer> -->
+
+  </main>
+
+  <script>
+    // Group each "## heading" and the content beneath it into a <section class="sec">,
+    // and wrap the heading's leading emoji in a <span class="sec-emoji"> so it can
+    // animate when the mouse is anywhere within that section.
+    document.addEventListener('DOMContentLoaded', function () {
+      var content = document.querySelector('.content');
+      if (!content) return;
+
+      var current = null;
+      Array.prototype.slice.call(content.children).forEach(function (el) {
+        if (el.tagName === 'H2') {
+          current = document.createElement('section');
+          current.className = 'sec';
+          content.insertBefore(current, el);
+          current.appendChild(el);
+
+          // split the leading emoji (everything before the first space) into its own span
+          var text = el.textContent;
+          var i = text.indexOf(' ');
+          if (i > 0) {
+            var emoji = text.slice(0, i);
+            var rest = text.slice(i);
+            el.textContent = '';
+            var span = document.createElement('span');
+            span.className = 'sec-emoji';
+            span.textContent = emoji;
+            el.appendChild(span);
+            el.appendChild(document.createTextNode(rest));
+          }
+        } else if (current) {
+          current.appendChild(el);
+        }
+      });
+
+      // On touch / no-hover devices there is no :hover, so tapping anywhere
+      // inside a section pops its emoji: add .tapped, then remove it once the
+      // transition has played so the next tap pops it again. The desktop
+      // :hover rules are untouched.
+      var noHover = window.matchMedia && window.matchMedia('(hover: none)').matches;
+      if (noHover) {
+        var pop = function (el) {
+          el.classList.remove('tapped');
+          // force reflow so re-adding the class restarts the animation
+          void el.offsetWidth;
+          el.classList.add('tapped');
+          setTimeout(function () { el.classList.remove('tapped'); }, 700);
+        };
+        // iOS Safari does not fire `click` on non-interactive elements, so we
+        // track touches manually and treat a touch that barely moved as a tap
+        // (a touch that moved a lot is a scroll, which must not pop the emoji).
+        var startX = 0, startY = 0;
+        // Tapping `el` pops `target` (defaults to `el` itself). This lets the
+        // whole header — photo area *and* the name/tagline beneath it — drive
+        // the portrait animation, just like `header:hover .portrait` on desktop.
+        var tappable = function (el, target) {
+          target = target || el;
+          el.addEventListener('touchstart', function (e) {
+            var t = e.changedTouches[0];
+            startX = t.clientX; startY = t.clientY;
+          }, { passive: true });
+          el.addEventListener('touchend', function (e) {
+            var t = e.changedTouches[0];
+            if (Math.abs(t.clientX - startX) < 10 && Math.abs(t.clientY - startY) < 10) {
+              pop(target);
+            }
+          }, { passive: true });
+        };
+        document.querySelectorAll('.sec').forEach(function (el) { tappable(el); });
+        var portrait = document.querySelector('.portrait');
+        var header = document.querySelector('header');
+        if (portrait && header) tappable(header, portrait);
+      }
+    });
+  </script>
+</body>
+</html>
