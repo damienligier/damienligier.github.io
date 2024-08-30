@@ -16,7 +16,7 @@ I have more than 6 years of experience in the industry (Zama, Paris & Wallix, Pa
 ## 📃 Publications
 
 #### 2024
-- **Faster Secret Keys for (T)FHE**, L. Bergerat, I. Chillotti, D. Ligier, J.-B. Orfila, A. Roux-Langlois, S. Tap, _Modified version to appear at CCS 2024_, [paper](https://eprint.iacr.org/2023/979.pdf).
+- **Faster Secret Keys for (T)FHE** or **New Secret Keys for Enhanced Performance in (T)FHE**, L. Bergerat, I. Chillotti, D. Ligier, J.-B. Orfila, A. Roux-Langlois, S. Tap, _Modified version to appear at CCS 2024_, [paper](https://eprint.iacr.org/2023/979.pdf).
 - **TFHE Simplified: A Practical Guide to Integer Arithmetic and Reliability**, I. Chillotti, S. El Kazdadi, D. Ligier, A. Meyre, T. Montaigu, J.-B. Orfila, S. Tap, _Accepted talk at FHE.org 2024._
     
 #### 2023
