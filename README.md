@@ -54,8 +54,8 @@ December 2021 at Asiacrypt 2021 with I. Chillotti, J.-B. Orfila and S. Tap.
 - September 2021, [What’s New in Concrete](https://medium.com/zama-ai/whats-new-in-concrete-aa414d17e535), with Ben Curtis, Ilaria Chillotti, Alexandre Péré
 
 ## 🎓 PhD Students
-- Loris Bergerat: Intern (2021) and PhD Student (2022 - 2023) - with I. Chillotti and J.-B. Orfila
-- Anas Boudi: PhD student (2022 - 2023) - with I. Chillotti and J.-B. Orfila.
+- L. Bergerat: Intern (2021) and PhD Student (2022 - 2023) - with I. Chillotti and J.-B. Orfila
+- A. Boudi: PhD student (2022 - 2023) - with I. Chillotti and J.-B. Orfila.
 
 ## 📚 Teaching
 - 2015 to 2018, Teaching Assistant at Université Paris Sud (Orsay, France), lab sessions in:
