@@ -35,13 +35,13 @@ I have more than 6 years of experience in the industry (Zama, Paris & Wallix, Pa
 - **Information Leakage Analysis of Inner-Product Functional Encryption based Data Classification**, S. Carpov, C. Fontaine, D. Ligier, R. Sirdey, _PST 2017._
 
 ## 🎤 Recent Talks
-- **Fully Homomorphic Encryption - ML Applications and New Directions**, July 2024 at PET Meetup (Seoul, Korea) with Ilaria Chillotti.
+- **Fully Homomorphic Encryption - ML Applications and New Directions**, July 2024 at PET Meetup (Seoul, Korea) with I. Chillotti.
 - **Faster Secret Keys for (T)FHE**, July 2024 at Normandie 2024 (Caen, France).
-- **An Overview of FHE, TFHE and Concrete Framework**, September 2023 at Cryptography and Coding Theory (Perugia, Italy) with Ilaria Chillotti.
-- **Parameter Optimization & Larger Precision for (T)FHE**, June 2023 at Journées Nationales 2023 du GDR Sécurité Informatique (Campus Cyber, Paris, France) with Ilaria Chillotti.
-- **Parameter Optimization and Larger Precision for (T)FHE**, March 2023 at FHE.org 2023 (Tokyo, Japan) with Samuel Tap.
-- **Parameter Optimization & Larger Precision for (T)FHE**, March 2023 at the 6th HomomorphicEncryption.org Standards Meeting (Seoul, South Korea) with Ilaria Chillotti.
-- **An overview of the Concrete Framework**, September 2022 at the 5th HomomorphicEncryption.org Standards Meeting (Geneva, Switzerland) with Ilaria Chillotti.
+- **An Overview of FHE, TFHE and Concrete Framework**, September 2023 at Cryptography and Coding Theory (Perugia, Italy) with I. Chillotti.
+- **Parameter Optimization & Larger Precision for (T)FHE**, June 2023 at Journées Nationales 2023 du GDR Sécurité Informatique (Campus Cyber, Paris, France) with I. Chillotti.
+- **Parameter Optimization and Larger Precision for (T)FHE**, March 2023 at FHE.org 2023 (Tokyo, Japan) with S. Tap.
+- **Parameter Optimization & Larger Precision for (T)FHE**, March 2023 at the 6th HomomorphicEncryption.org Standards Meeting (Seoul, South Korea) with I. Chillotti.
+- **An overview of the Concrete Framework**, September 2022 at the 5th HomomorphicEncryption.org Standards Meeting (Geneva, Switzerland) with I. Chillotti.
 - **Improved Programmable Bootstrapping with Larger Precision and Efficient Arithmetic Circuits for TFHE**,
 December 2021 at Asiacrypt 2021 with I. Chillotti, J.-B. Orfila and S. Tap.
 
@@ -50,7 +50,7 @@ December 2021 at Asiacrypt 2021 with I. Chillotti, J.-B. Orfila and S. Tap.
 - [DataPeps](https://github.com/wallix/datapeps-sdk-js)
 
 ## 📝 Blogposts
-- June 2023, [Parameter Optimization & Larger Precision for (T)FHE](https://www.zama.ai/post/parameter-optimization-and-larger-precision-for-tfhe), with Loris Bergerat, Anas Boudi, Ilaria Chillotti, Quentin Bourgerie, Jean-Baptiste Orfila and Samuel Tap. 
+- June 2023, [Parameter Optimization & Larger Precision for (T)FHE](https://www.zama.ai/post/parameter-optimization-and-larger-precision-for-tfhe), with L. Bergerat, A. Boudi, I. Chillotti, Q. Bourgerie, J.-B. Orfila and S. Tap. 
 - September 2021, [What’s New in Concrete](https://medium.com/zama-ai/whats-new-in-concrete-aa414d17e535), with Ben Curtis, Ilaria Chillotti, Alexandre Péré
 
 ## 🎓 PhD Students
