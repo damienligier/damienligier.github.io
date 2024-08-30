@@ -35,9 +35,11 @@ I have more than 6 years of experience in the industry (Zama, Paris & Wallix, Pa
 - **Information Leakage Analysis of Inner-Product Functional Encryption based Data Classification**, S. Carpov, C. Fontaine, D. Ligier, R. Sirdey, _PST 2017._
 
 ## 🎤 Recent Talks
+- **Fully Homomorphic Encryption - ML Applications and New Directions**, July 2024 at PET Meetup (Seoul, Korea) with Ilaria Chillotti.
+- **Faster Secret Keys for (T)FHE**, July 2024 at Normandie 2024 (Caen, France).
 - **An Overview of FHE, TFHE and Concrete Framework**, September 2023 at Cryptography and Coding Theory (Perugia, Italy) with Ilaria Chillotti.
 - **Parameter Optimization & Larger Precision for (T)FHE**, June 2023 at Journées Nationales 2023 du GDR Sécurité Informatique (Campus Cyber, Paris, France) with Ilaria Chillotti.
-- **Parameter Optimization and Larger Precision for (T)FHE**, March 2023 at FHE.org 2023 with Samuel Tap.
+- **Parameter Optimization and Larger Precision for (T)FHE**, March 2023 at FHE.org 2023 (Tokyo, Japan) with Samuel Tap.
 - **Parameter Optimization & Larger Precision for (T)FHE**, March 2023 at the 6th HomomorphicEncryption.org Standards Meeting (Seoul, South Korea) with Ilaria Chillotti.
 - **An overview of the Concrete Framework**, September 2022 at the 5th HomomorphicEncryption.org Standards Meeting (Geneva, Switzerland) with Ilaria Chillotti.
 - **Improved Programmable Bootstrapping with Larger Precision and Efficient Arithmetic Circuits for TFHE**,
