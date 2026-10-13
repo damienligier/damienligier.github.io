@@ -52,6 +52,7 @@ During my time at Zama, I notably built the foundations of **CONCRETE** and **TF
 - **Improved Programmable Bootstrapping with Larger Precision and Efficient Arithmetic Circuits for TFHE**, December 2021 at _Asiacrypt 2021_ with I. Chillotti, J.-B. Orfila & S. Tap.
 
 ## 🖇️ Program Committees
+- **FHE.org 2027**, April 4, Seattle, USA, [link](https://fhe.org/conferences/conference-2027/).
 - **SAC 2026**, March 23-27, Thessaloniki, Greece, [link](https://www.sigapp.org/sac/sac2026/).
 - **PKC 2026**, May 25-28, West Palm Beach, USA, [link](https://pkc.iacr.org/2026/).
 
