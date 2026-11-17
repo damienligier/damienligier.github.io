@@ -18,6 +18,9 @@ During my time at Zama, I notably built the foundations of **CONCRETE** and **TF
 
 ## 📃 Publications
 
+#### 2026
+- **Homomorphic Encryption and Bootstrapping for Real Matrices over Conjugate-Invariant Rings**, I. Chillotti, & H. Kim, Y. Lee, Y. Lee, D. Ligier, _Preprint_, [paper](https://eprint.iacr.org/2026/2887.pdf).
+
 #### 2025
 - **TFHE Gets Real: an Efficient and Flexible Homomorphic Floating-Point Arithmetic**, L. Bergerat, I. Chillotti, D. Ligier, J.-B. Orfila & S. Tap, _TCHES 2025_, [paper](https://eprint.iacr.org/2025/257.pdf).
 
